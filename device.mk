@@ -214,5 +214,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.charger.enable_suspend=true
 
+# GApps
+GAPPS_VARIANT := nano
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oppo/RMX1805/RMX1805-vendor.mk)
+
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
